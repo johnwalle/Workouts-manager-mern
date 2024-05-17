@@ -38,12 +38,12 @@ const Home = () => {
     }, [dispatch, user]);
 
     return (
-        <div className="flex ">
-            <div className="w-1/2 mr-10 flex mt-44  justify-center">
+        <div className="flex flex-col md:flex-row">
+            <div className="w-full md:w-1/2 mr-10 flex mt-44 justify-center">
                 <WorkoutForm />
             </div>
             {workouts && (
-                <div className="w-1/2 mt-10 mr-10">
+                <div className="w-full md:w-1/2 mt-10 mr-10">
                     <div className="flex flex-col">
                         <h2 className="text-xl text-blue-600 font-bold mb-2">{user.name} Workouts</h2>
                         {workouts.map((workout) => (

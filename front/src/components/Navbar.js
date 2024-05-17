@@ -22,7 +22,7 @@ const Navbar = () => {
           </div>
           {user ? (
             <div>
-              <span className="text-cyan-200 from-orange-500 pr-3">{user.email}</span>
+              <span className="text-cyan-200 from-orange-500 pr-3">{user.name}</span>
               <button
                 onClick={logoutHandler}
                 className="text-gray-100 border-cyan-400 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
